@@ -1,0 +1,353 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  list-style: none;
+  text-decoration: none;
+  
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  background: radial-gradient(#434343, black);
+}
+
+/* Navbar */
+header
+{
+    transition: 0.6s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 100px;
+    z-index: 100000;
+
+}
+
+.logo 
+{
+    width: 10%;
+}
+
+header.sticky
+{
+    transition: 0.8s;
+    padding: 5px 100px;
+    background: #363636;
+
+}
+header .logo
+{
+    transition: 0.6s;
+    position: relative;
+    font-weight: 700;
+    color: #fff;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+}
+
+header .menu{
+  float: right;
+  transition: 0.6s;
+  position: relative;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+
+header ul
+{
+    background: #fff;
+    padding: 10px;
+    border-radius: 20px;
+    transition: 0.6s;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 22.7%;
+    margin-right: 60%;
+    width: 40%;
+    padding: 10px;
+
+}
+
+header input
+{
+    background: darkgray;
+    border-radius: 20px;
+}
+
+header ul li
+{
+    transition: 0.6s;
+    position: relative;
+    list-style: none;
+}
+
+header ul li a
+{
+    transition: 0.5s;
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #000000;
+    letter-spacing: 2px;
+    font-weight: 500px;
+}
+
+header.sticky .logo,
+header.sticky ul li a
+{
+    color: #000;
+}
+
+#ancoras{
+  margin-top: 170px;
+  margin-left: 40px;
+}
+
+#ancoras a{
+  text-decoration: none;
+  color: white;
+}
+
+#login{
+  color: white;
+  padding-top: 0%;
+  margin-left: 10px;
+  font-size: small;
+}
+
+.loginimg{
+  width: 25px;
+  height: 25px;
+}
+
+.carrinho{
+margin-left: 20px;
+margin-right: 0px;
+width: 25px;
+height: 25px;
+}
+
+#titulos{
+  margin-top: 20px;
+  margin-left: 40px;
+  color: white;
+}
+
+#caixa{
+  margin: 4rem auto 0 auto;
+  display: flex;
+  padding: 1rem;
+  overflow-x: scroll;
+}
+
+/* scroll set */
+::-webkit-scrollbar{
+  width: 0;
+  height: 8px;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: rgb(0, 0, 0);
+  border-radius: 50px;
+  
+}
+
+/* Top Mais Vendidos */
+#caixa div{
+  min-width: 15rem;
+  max-height: 20rem;
+  background-color: #4d4a4a;
+  border: solid 2px;
+  border-radius: 20px;
+  margin-left: 2rem;
+}
+
+#caixa div:hover{
+  transform: scale(1.1);
+}
+
+#caixa img{
+  height: 125px;
+  width: 195px;
+}
+
+#caixa div h3{
+  background-color: #4d4a4a;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: white;
+}
+#caixa div p{
+  background-color: #4d4a4a;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: white;
+}
+
+#caixa input{
+  background-color: rgb(0, 255, 0);
+  padding: 10px;
+  border-radius: 15px;
+  margin-left: 80px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+#topjogos{
+  width: 150px;
+  height: 100px;
+  margin-top: 20px;
+  margin-left: 20px;
+  border-radius: 10px;
+}
+
+#outros{
+  display: flex;
+  margin-left: 75px;
+  flex-wrap: wrap;
+}
+
+#outros img{
+  border-radius: 20px;
+  height: 200px;
+  width: 350px;
+  display: flex;
+}
+
+#outros img:hover{
+  transform: scale(1.1);
+}
+
+#outros h3{
+  color: white;
+}
+
+#jogo{
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-left: 25px;
+  margin-right: 25px;
+  align-items: baseline;
+}
+
+#nome{
+  float: left;
+}
+
+#preco{
+  float: right;
+}
+
+/* Gift Cards */
+#gifts{
+  background-color: #434343;
+  margin: 4rem auto 0 auto;
+  display: flex;
+  padding: 1rem;
+  background-image: url('img/Gift\ Card\ Wallpaper.jpg');
+  background-size: cover;
+  align-items: center;
+  justify-content: center;
+}
+
+#gifts div{
+  min-width: 15rem;
+  max-height: 20rem;
+  background-color: #4d4a4a;
+  border: solid 2px;
+  border-radius: 20px;
+  margin-left: 2rem;
+}
+
+#gifts img{
+  height: 125px;
+  width: 195px;
+}
+
+#cards{
+  width: 150px;
+  height: 100px;
+  margin-top: 20px;
+  margin-left: 20px;
+  border-radius: 10px;
+}
+
+#gifts div h3{
+  background-color: #4d4a4a;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: white;
+}
+#gifts div p{
+  background-color: #4d4a4a;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: white;
+}
+
+#gifts input{
+  background-color: rgb(0, 255, 0);
+  padding: 10px;
+  border-radius: 15px;
+  margin-left: 80px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+footer {
+  display: flex;
+  background-color: var(--cor-primaria);
+  color: rgb(255, 255, 255);
+  font-size: medium;
+  height: 150px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  
+}
+
+.comunicacoes a{
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+
+
+
+.comunicacoes a:hover{
+  color:rgb(0, 255, 0);
+  transition: all 0.2s ease 0s;
+}
+
+.copyright{
+  font-size: 13.5px;
+  color: rgb(255, 255, 255);
+}
+
+.copyright:hover{
+  color:rgb(0, 255, 0);
+  transition: all 0.2s ease 0s;
+}

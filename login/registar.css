@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+h1{
+    color: white;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 50px;
+    
+}
+   
+body{
+    background: radial-gradient(#434343, black);
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      margin-top: 8%;
+    }
+
+.registar{
+    width: 500px;
+    height: 65px;
+    border-radius: 15px;
+    text-align: center;
+    background-color: rgb(126, 230, 57);
+    color: black;
+    font-size: large;
+}
+
+input{
+    width: 500px;
+    height: 75px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: large;
+}
+
+a{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: white;
+    font-size: large;
+}

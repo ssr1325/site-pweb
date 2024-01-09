@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="homecss.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <?php
+        session_start();
+
+        //Caso o nome de inicio de sessão seja admin
+        if ($_SESSION['nome'] == 'admin'){
+            header("Location: admin.php");
+        }
+    ?>
+
+</head>
+<body onload="slider()">
+        <header>
+            <img src="img/OTSG.png" alt="" class="logo">
+            <div id="login">
+                <a href="login/logout.php">
+                        <img src="img/LogoutB.png" alt="Login" class="loginimg">
+            </div>
+            <ul>
+                <li><a href="userhome.php">Home</a></li>
+                <li><a href="userpc.php">PC</a></li>
+                <li><a href="userps.php">PS</a></li>
+                <li><a href="usercontactos.php">Contactos</a></li>
+                <img src="img/Carrinho.png" alt="Carrinho" class="carrinho">
+                
+            </ul>
+            
+        </header>
+        <section class="banner"></section>
+        
+        <div class="slider">
+            
+            <img src="img/2. Medieval Dynasty.jpg" id="slideImg">
+        </div>
+        <div class="overlay"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+
+        var slideImg = document.getElementById("slideImg");
+
+        var images = new Array(
+    "img/Jogos/1. Elden Ring Wallpaper.png",
+    "img/Final Fantasy XVI.jpg",
+    "img/Jogos/3. Hogwarts Legacy Wallpaper.jpg"
+);
+
+var len = images.length;
+var i = 0;
+
+function slider(){
+    if(i > len-1){
+        i = 0;
+    }
+    slideImg.src = images[i];
+    i++;
+    setTimeout('slider()',3000);
+}
+    </script>
+        <br>
+        <br>
+        
+        <div id="titulos">
+            <h1>Tendências</h1>
+        </div>
+        
+        <!-- Scroll -->
+        <div id="scroll">
+        <div id="caixa">
+                <div><img id="topjogos" src="img/Final Fantasy XVI.jpg" alt=""><h3>Final Fantasy XVI</h3><p>35,99€</p><input type="submit" value="Comprar"></div>
+                <div><img id="topjogos" src="img/God of War Ragnarok.jpg" alt=""><h3>God of War Ragnarok</h3><p>32,74€</p><input type="submit" value="Comprar"></div>
+                <div><img id="topjogos" src="img/Grand Theft Auto V.jpg" alt=""><h3>GTAV</h3><p>36,41€</p><input type="submit" value="Comprar"></div>
+                <div><img id="topjogos" src="img/Red Dead Redemption 2.jpg" alt=""><h3>RDR2</h3><p>20,65€</p><input type="submit" value="Comprar"></div>
+                <div><img id="topjogos" src="img/Horizon Forbidden West.jpg" alt=""><h3>Horizon Forbidden West</h3><p>5,67€</p><input type="submit" value="Comprar"></div>
+                <div><img id="topjogos" src="img/WWE 2k23.jpg" alt=""><h3>WWE 2k23</h3><p>9,67€</p><input type="submit" value="Comprar"></div>
+                <div><img id="topjogos" src="img/Forza Horizon 5.jpg" alt=""><h3>Forza Horizon 5</h3><p>29,99€</p><input type="submit" value="Comprar"></div>
+                <div><img id="topjogos" src="img/Spider-Man.jpg" alt=""><h3>Marvel Spider-Man</h3><p>25,82€</p><input type="submit" value="Comprar"></div>
+                <div><img id="topjogos" src="img/Avatar Frontiers of Pandora.jpg" alt=""><h3>AFP</h3><p>50,49€</p><input type="submit" value="Comprar"></div>
+        </div><div id="caixa">
+                <div><img id="topjogos" src="img/Final Fantasy XVI.jpg" alt=""><h3>Final Fantasy XVI</h3><p>35,99€</p><input type="submit" value="Comprar"></div>
+                <div><img id="topjogos" src="img/God of War Ragnarok.jpg" alt=""><h3>God of War Ragnarok</h3><p>32,74€</p><input type="submit" value="Comprar"></div>
+                <div><img id="topjogos" src="img/Grand Theft Auto V.jpg" alt=""><h3>GTAV</h3><p>36,41€</p><input type="submit" value="Comprar"></div>
+                <div><img id="topjogos" src="img/Red Dead Redemption 2.jpg" alt=""><h3>RDR2</h3><p>20,65€</p><input type="submit" value="Comprar"></div>
+                <div><img id="topjogos" src="img/Horizon Forbidden West.jpg" alt=""><h3>Horizon Forbidden West</h3><p>5,67€</p><input type="submit" value="Comprar"></div>
+                <div><img id="topjogos" src="img/WWE 2k23.jpg" alt=""><h3>WWE 2k23</h3><p>9,67€</p><input type="submit" value="Comprar"></div>
+                <div><img id="topjogos" src="img/Forza Horizon 5.jpg" alt=""><h3>Forza Horizon 5</h3><p>29,99€</p><input type="submit" value="Comprar"></div>
+                <div><img id="topjogos" src="img/Spider-Man.jpg" alt=""><h3>Marvel Spider-Man</h3><p>25,82€</p><input type="submit" value="Comprar"></div>
+                <div><img id="topjogos" src="img/Avatar Frontiers of Pandora.jpg" alt=""><h3>AFP</h3><p>50,49€</p><input type="submit" value="Comprar"></div>
+        </div>
+        </div>
+        <div id="titulos">
+        <h1> Top Mais Vendidos</h1>
+        </div>
+        <div id="outros">
+            <div id="jogo">
+                <div><img src="img/2. Medieval Dynasty.jpg" alt=""><h3 id="nome">Medieval Dynasty</h3><h3 id="preco">9,99€</h3></div>
+            </div>
+            <div id="jogo">
+                <div><img src="img/3. Hogwarts Legacy.jpg" alt=""><h3 id="nome">Hogwarts Legacy</h3><h3 id="preco">9,99€</h3></div>
+            </div>
+            <div id="jogo">
+                <div><img src="img/4. Skyrim.jpg" alt=""><h3 id="nome">Skyrim</h3><h3 id="preco">9,99€</h3></div>
+            </div>
+            <div id="jogo">
+                <div><img src="img/5. God of War.jpg" alt=""><h3 id="nome">God of War</h3><h3 id="preco">9,99€</h3></div>
+            </div>
+            <div id="jogo">
+                <div><img src="img/6. The Last of Us Part I.jpg" alt=""><h3 id="nome">The Last Of Us</h3><h3 id="preco">9,99€</h3></div>
+            </div>
+            <div id="jogo">
+                <div><img src="img/1. Elden Ring.jpg" alt=""><h3 id="nome">Elden Ring</h3><h3 id="preco">9,99€</h3></div>
+            </div>
+        </div>
+        <footer id="footer">
+            
+        
+                <div class="comunicacoes">
+                    <a href="userhome.php">On The Spot Gaming</a>
+                    <ul class="redes-sociais">
+        
+                    </div>
+                    
+                <p class="copyright">&copy; Copyright On The Spot Gaming. Todos os direitos reservados.</p>
+            </footer>
+        
+    <script>
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);
+        })
+    </script>
+
+</body>
+</html>

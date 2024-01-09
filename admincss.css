@@ -1,0 +1,34 @@
+body{
+    background: black;
+    color: white;
+  }
+
+.tabela {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid white;
+  }
+  
+  /* Style for table header */
+  .tabela th {
+    background-color: black;
+    border: 1px solid white;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  /* Style for table data cells */
+  .tabela td {
+    border: 1px solid white;
+    padding: 8px;
+  }
+  
+  /* Alternate row background color */
+  .tabela tbody tr:nth-child(even) {
+    background-color: black;
+  }
+
+  a{
+    font-size: large;
+    color: white;
+  }
